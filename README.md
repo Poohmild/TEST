@@ -105,9 +105,7 @@
 }
 
 
-body{
-	font-family: 'Montserrat', sans-serif;
-}
+
 nav{
 	padding: 15px;
 	background-color: aqua;
@@ -120,19 +118,19 @@ main{
 	display: flex;
 	padding: 15px;
 	background-color: burlywood;
-	
+	justify-content: space-between;
+	height: 100vh;
 }
 ื
 
 aside{
-	width: 30%;
-	background-color: blueviolet;
-	
+	width:  70%;
+	background-color: yellowgreen;
 }
 
 article{
-	width: 70%;
-    background-color: chocolate;
+	width:  70%;
+	background-color: cadetblue;
 }
 
 
@@ -145,20 +143,21 @@ footer{
 @media  screen and (min-width: 512px)  {
 	main{
 		flex-direction: column;
-		height: 100%;
+		
 		background-color: green;
 	}
 	
 	aside{
 		
 		width: 100%;
-		height: 100%
+		height: 100%;
+		
 	}
 	
 	article{
 		
 		width: 100%;
-		height: 100%
+        height: 100%;
 	}
 		}
 		
@@ -175,6 +174,7 @@ footer{
 	
 	article{
 		width: 100%;
+		height: 100%;
 	}
 		}
 		
@@ -189,5 +189,9 @@ footer{
 	
 	article{
 		width: 100%;
+		height: 100%;
 	}
 		}
+		
+
+
