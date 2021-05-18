@@ -500,3 +500,93 @@ div:active {
 10. หากกำหนดให้DIV id = “parent” มีขนาดตัวอักษร 20px และภายใต้ DIV id = “parent” มี DIV id =“child” ควรกำหนดขนาดตัวอักษรใน DIV id = “child” อย่างไรให้สัมพันธ์กับ DIV id = “parent” 
 
 คำตอบ
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="exsimple10.css" >
+	</head>	
+<body>
+
+<h1 id="parent">Parent and Child</h1>
+<p id="child"></p>
+
+<script>
+document.getElementById("child").innerHTML = document.getElementById("parent").innerHTML;
+</script>
+
+</body>
+</html>
+
+
+JS
+1.หากต้องการเข้าถึงหรือค้นหา DIV element ที่มี id = “mylist” สามารถเรียกใช้ผ่าน document method ใดได้บ้าง
+<ไม่เข้าใจโจทย์ทำได้เท่านี้ สามารถส่งโจทย์มาใหม่ได้นะคะ>
+คำตอบ
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="mylist" value="">  
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+       var num = [60, 70, 80, 90];
+
+       function checkAdult(num) {
+       return num >= 70;
+                       }
+
+       function myFunction() {
+        document.getElementById("demo").innerHTML =num.find(checkAdult);
+                           }
+
+        
+    </script>
+ 
+</body>
+</html>
+
+2.จงเขียน style โดยใช้Javascript ให้DIV ที่มีid = “box” ให้มีกรอบสีเขียว พื้นหลังสีแดง มีค่า alpha ที่ 0.7 มีความกว้าง 100px และความสูง 100px
+
+คำตอบ
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p id="p2"></p>
+
+     <script>
+      
+      document.getElementById("p2").style.backgroundColor = "rgba(255,0,0,0.7)";
+      document.getElementById("p2").style.width="100px";
+      document.getElementById("p2").style.height="100px";
+      document.getElementById("p2").style.border="medium solid green";
+
+      </script>
+    </body>
+</html>
+
+3.จงเขียนชุดคำสั่งเพื่อดึงข้อมูลที่ถูกกรอกลงในช่อง input ที่มีtype = text
+
+คำตอบ
+<!DOCTYPE html>
+<html>
+<body>
+
+Field1: <input type="text" id="field1" value=""><br><br>
+
+<button onclick="myFunction()">Copy Text</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = document.getElementById("field1").value;
+}
+</script>
+
+</body>
+</html>
+
+4.
