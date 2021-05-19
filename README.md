@@ -589,4 +589,73 @@ function myFunction() {
 </body>
 </html>
 
-4.
+4.จงเขียนชุดคำสั่งเพื่อดึงข้อมูลที่ถูกเลือกในช่อง Input ที่มีtype = checkbox และ type = radio
+
+คำตอบ
+5. จงเขียนชุดคำสั่งเพื่อดึงข้อมูลที่ถูกเลือกใน select input
+
+คำตอบ
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form >
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="toyota">toyota</option>
+          <option value="honda">honda</option>
+          <option value="isuzu">isuzu</option>
+          <option value="MG">MG</option>
+        </select>
+        <br><br>
+        
+      </form>
+
+<button onclick="myFunction()">Try Me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = document.getElementById("cars").value;
+}
+</script>
+
+</body>
+</html>
+
+6. จงเขียน class โดยมี property price, amount และ discount และมีmethod ใน class ประกอบด้วย setPrice() เพื่อส่งค่า ให้price, setAmount() เพื่อส่งค่า ให้amount และ setDiscount() เพื่อส่งค่าให้
+discount และ method summary() เพื่อ return ค่า (amount * price) - discount
+
+คำตอบ
+7.จงเขียนฟังก์ชันหรือชุดคำสั่งที่จะให้แสดงข้อความ “I Love You” ใน DIV element ที่มีid =“love-message” โดยข้อความจะแสดงเมื่อเวลาผ่านไปแล้ว 8 วินาที
+ตัวอย่าง ผลลัพธ์
+<div id=”love-message”>
+I Love You
+</div>
+
+คำตอบ
+
+10.จงเขียนฟังก์ชั่นหรือชุดคำสั่งเพื่อสลับตำแหน่งตัวอักษร (reverse) ของประโยค “I Love Javascript” เป็น “tpircsavaJ evoL I”
+
+คำตอบ
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+ 
+ let site = "I Love Javascripts";
+ let reversed = "";
+
+  // Reverse string
+  for (let i = site.length - 1; i >= 0; i--) {
+    reversed += site[i];
+}
+
+console.log("Original: " + site);
+console.log("Reversed: " + reversed);
+
+</script>
+
+</body>
+</html>
