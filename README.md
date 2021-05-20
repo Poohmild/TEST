@@ -628,6 +628,8 @@ function myFunction() {
 discount และ method summary() เพื่อ return ค่า (amount * price) - discount
 
 คำตอบ
+
+
 7.จงเขียนฟังก์ชันหรือชุดคำสั่งที่จะให้แสดงข้อความ “I Love You” ใน DIV element ที่มีid =“love-message” โดยข้อความจะแสดงเมื่อเวลาผ่านไปแล้ว 8 วินาที
 ตัวอย่าง ผลลัพธ์
 <div id=”love-message”>
@@ -635,6 +637,60 @@ I Love You
 </div>
 
 คำตอบ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS7</title>
+    
+</head>
+<body>
+	
+    <style>
+        div{
+            background-color: antiquewhite;
+            width: 100px;
+            height: 50px;
+            margin: auto;
+            font: 1em sans-serif  ;
+            
+
+        }
+    </style>
+    
+    <div id="love-message"></div>
+    
+    
+    <script>
+      
+      var seconds_left = 7 ;
+      var interval=setInterval(function() {
+      document.getElementById('love-message').innerHTML=--seconds_left;
+
+    if (seconds_left <=0)
+    {
+        document.getElementById('love-message').innerHTML='I Love You';
+        clearInterval(interval);
+      }
+     }, 1000);
+
+     
+    </script>
+</body>
+</html>
+
+8. จงเขียนฟังก์ชันหรือชุดคำสั่งให้แสดงข้อความ “I Like You” ใน DIV element ที่มี id = “like-message” โดยข้อความจะถูกเพิ่มเข้าไปต่อท้ายข้อความก่อนหน้า ทุกๆ 5 วินาที
+ตัวอย่างผลลัพธ์
+<div id=”like-message”>
+I Like You
+I Like You
+I Like You
+</div>
+
+คำตอบ
+
 
 10.จงเขียนฟังก์ชั่นหรือชุดคำสั่งเพื่อสลับตำแหน่งตัวอักษร (reverse) ของประโยค “I Love Javascript” เป็น “tpircsavaJ evoL I”
 
