@@ -665,7 +665,7 @@ I Love You
     
     <script>
       
-      var seconds_left = 7 ;
+      var seconds_left = 9 ;
       var interval=setInterval(function() {
       document.getElementById('love-message').innerHTML=--seconds_left;
 
@@ -691,6 +691,32 @@ I Like You
 
 คำตอบ
 
+9. จงเขียนฟังก์ชันหรือชุดคำสั่งให้แสดงข้อความใน alert box เมื่อมีการคลิกที่ Button id = “aws-btn”
+
+คำตอบ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS9</title>
+</head>
+<body>
+    <button id="“aws-btn" onclick="myFunction()">Click Me</button>
+
+    <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Press a button!")) {
+            txt = "You pressed OK!";
+          } 
+          document.getElementById("demo").innerHTML = txt;
+        }
+
+        </script>
+</body>
+</html>
 
 10.จงเขียนฟังก์ชั่นหรือชุดคำสั่งเพื่อสลับตำแหน่งตัวอักษร (reverse) ของประโยค “I Love Javascript” เป็น “tpircsavaJ evoL I”
 
@@ -715,3 +741,148 @@ console.log("Reversed: " + reversed);
 
 </body>
 </html>
+
+11. จงเขียนชุดคำสั่ง HTML เพื่อเรียกแสดงไฟล์ Video .mp4 จาก URL,https://my.video-server.com/mytrip.mp4 จาก นั้น ให้สร้าง Button id = “play-btn” และ id = “pause-btn” โดยเมื่อคลิกที่ปุ่ม “play-btn” ให้เริ่มเล่น Video และเมื่อคลิกที่ปุ่ม “pause-btn” ให้หยุดเล่น Video
+
+คำตอบ link เปิดไม่ได้ค่ะ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center"> 
+        <button id = “play-btn” onclick="play()">Play</button> 
+        <button id = “pause-btn” onclick="pause()">Pause</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source url="mytrip.mp4" type="video/mp4">
+          
+          
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function play() { 
+        if (myVideo.play) 
+          myVideo.play();  
+           
+      } 
+      function pause(){
+        if ( myVideo.pause) {
+            myVideo.pause(); 
+        }
+    }
+      </script> 
+      
+      <a href="https://my.video-server.com/mytrip.mp4" target="_blank"></a>
+
+</body>
+</html>
+
+12. จงเขียนฟังก์ชั่นหรือชุดคำสั่งเพื่อ GET ข้อมูลจาก URL https://my.private-server.com/users.json
+
+คำตอบ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+     
+    function getURL() {
+       open(url="https://my.private-server.com/users.json");
+    }
+    </script>
+     
+    <button type="button" onclick="getURL();">Get Page URL</button>
+    </script>
+</body>
+</html>
+
+13. จงเขียนฟังก์ชั่นหรือชุดคำสั่งเพื่อ POST ข้อมูล name=John, lastname=Adam, age=28 ไปยัง URL https://my.private-server.com/save
+
+คำตอบ
+
+14. มีarray ที่มีสมาชิก [1, 9, 9, 3, 2, 1, 3, 6] หากต้องการเปลี่ยนสมาชิกใน array ชุดดังกล่าวให้กลายเป็น [1,18, 27, 12, 10, 6, 21, 48] ควรเขียนฟังก์ชั่นหรือชุดคำสั่งอย่างไร
+
+คำตอบ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let languages = [1, 9, 9, 3, 2, 1, 3, 6];
+        languages[0]= 1;
+        languages[1]= 18;
+        languages[2]= 27;
+        languages[3]= 12;
+        languages[4]= 10;
+        languages[5]= 6;
+        languages[6]= 21;
+        languages[7]= 48;
+        
+        console.log(languages); 
+        
+    </script>
+</body>
+</html>
+
+15. มีarray ที่มีสมาชิก [‘adam’, ‘wanda’, ‘john’, ‘sean’, ‘danny’, ‘jean’] หากต้องการกรอง (filter) สมาชิกใน array ให้เหลือเพียง [‘john’, ‘sean’, ‘jean’] ควรเขียนฟังก์ชั่น หรือชุดคำสั่งอย่างไร
+
+คำตอบ
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS14</title>
+</head>
+<body>
+    <script>
+      
+
+       let names = ['adam', 'wanda', 'john', 'sean', 'danny', 'jean']
+
+       function filterItems(arr, query) {
+      return arr.filter(function(F) {
+      return F.toLowerCase().indexOf(query.toLowerCase()) !== -1 })
+     }
+
+      console.log(filterItems(names, 's'))  
+      console.log(filterItems(names, 'j'))  
+    </script>
+</body>
+</html>
+
+16. จงเขียนฟังก์ชั่นหรือชุดคำสั่งที่สั่ง งานให้DIV ที่มีid = “red-box” มีพื้นหลังสีแดง ขนาด 200 x 200px ให้มีลักษณะการทำงานดังต่อไปนี้
+- เลื่อนไปทางขวา 150px ในระยะเวลา 2 วินาที
+- หยุด 1 วินาที
+- เลื่อนลงด้านล่าง 200px ในระยะเวลา 1 วินาที
+- หยุด 0.5 วินาที
+- เลื่อนไปทางซา้ย 100px ในระยะเวลา 5 วินาที
+
+คำตอบ
+
+17. จงเขียนคำสั่งหรือฟังก์ชั่นเพื่อสร้าง HTML element ใน <body> โดยมีผลลัพธ์ดังนี้
+<div id=”parent” style=”border: 1px solid red”>
+<div class=”child” style=”border: 1px solid blue; background-color: green”>
+<span id=”inner-message”>Hi..</span>
+</div>
+</div>
