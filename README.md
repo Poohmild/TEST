@@ -751,7 +751,7 @@ console.log("Reversed: " + reversed);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS11</title>
 </head>
 <body>
     <div style="text-align:center"> 
@@ -794,7 +794,7 @@ console.log("Reversed: " + reversed);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS12</title>
 </head>
 <body>
 
@@ -823,21 +823,21 @@ console.log("Reversed: " + reversed);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS14</title>
 </head>
 <body>
     <script>
-        let languages = [1, 9, 9, 3, 2, 1, 3, 6];
-        languages[0]= 1;
-        languages[1]= 18;
-        languages[2]= 27;
-        languages[3]= 12;
-        languages[4]= 10;
-        languages[5]= 6;
-        languages[6]= 21;
-        languages[7]= 48;
+        let num = [1, 9, 9, 3, 2, 1, 3, 6];
+        num[0]= 1;
+        num[1]= 18;
+        num[2]= 27;
+        num[3]= 12;
+        num[4]= 10;
+        num[5]= 6;
+        num[6]= 21;
+        num[7]= 48;
         
-        console.log(languages); 
+        console.log(number); 
         
     </script>
 </body>
@@ -886,3 +886,54 @@ console.log("Reversed: " + reversed);
 <span id=”inner-message”>Hi..</span>
 </div>
 </div>
+
+คำตอบ
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+        <div id="parent"><span id=”inner-message” style="font: 1em sans-serif; ">Hi..</span></div>
+        <div id="child"><span id=”inner-message” style="font: 1em sans-serif; ">Hi..</span></div>
+           
+        <script>
+            document.getElementById("parent").style.backgroundColor = " rgb(188,99,89)";
+            document.getElementById("parent").style.width = "200px";
+            document.getElementById("parent").style.height = "200px"; 
+            document.getElementById("parent").style.border = "1px solid red"; 
+            document.getElementById("parent").style.color = "white";
+            document.getElementById("parent").style.textAlign ="center";
+            document.getElementById("parent").style.margin="auto auto";
+
+
+            document.getElementById("child").style.backgroundColor = "green";
+            document.getElementById("child").style.width = "200px";
+            document.getElementById("child").style.height = "200px";
+            document.getElementById("child").style.border=border = "1px solid blue";
+            document.getElementById("child").style.color = "white"; 
+            document.getElementById("child").style.textAlign ="center";   
+            document.getElementById("child").style.margin="50px auto";
+            
+            </script>
+        
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id=”parent” style="background-color:blueviolet; border: 1px solid red ; width: 100px; height: 100px; color: white; text-align: center;">
+         <span id=”inner-message” style="font: 1em sans-serif; ">Hi..</span>
+              </div>
+
+    <div id=”child” style="background-color: green;border :1px solid blue;width: 50px; height: 50px;margin-top: 5px; color: white;text-align: center;" >
+        <span id=”inner-message” style="font: 1em sans-serif;">Hi..</span>
+              </div> 
+
+</body>
+</html>
