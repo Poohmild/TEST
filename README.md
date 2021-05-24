@@ -895,7 +895,7 @@ console.log("Reversed: " + reversed);
 </style>
 <body>
 
-<p><button onclick="myMove(),myMove2()">Click Me</button></p> 
+<p><button onclick="myMove()">Click Me</button></p> 
 
 <div id ="container">
   <div id ="animate"></div>
