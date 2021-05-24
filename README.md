@@ -1,3 +1,5 @@
+ชื่อนางสาวสุจิรา นามสกุลเรืองเวช อีเมล ruangveshsujira@gmail.com เบอร์โทรศัพท์ 087-405-9966
+
 1. จงประกาศการเรียกใช้font ชื่อ “Roboto” จาก Google Fonts
 
 คำตอบ
@@ -879,6 +881,52 @@ console.log("Reversed: " + reversed);
 - เลื่อนไปทางซา้ย 100px ในระยะเวลา 5 วินาที
 
 คำตอบ
+
+<!DOCTYPE html>
+<html>
+<style>
+
+#animate {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p><button onclick="myMove(),myMove2()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+var id = null;
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 2);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+      elem.style.right = pos + "px";
+      conti
+     } 
+     
+  }
+      
+}
+ 
+</script>
+
+</body>
+</html>
+
 
 17. จงเขียนคำสั่งหรือฟังก์ชั่นเพื่อสร้าง HTML element ใน <body> โดยมีผลลัพธ์ดังนี้
 <div id=”parent” style=”border: 1px solid red”>
